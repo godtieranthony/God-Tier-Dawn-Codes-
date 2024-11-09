@@ -1,0 +1,55 @@
+<div class="ticker-wrapper">
+    <div class="ticker">
+        <div class="ticker-content">
+            TRENDING ON TIKTOK &nbsp;&nbsp;&nbsp;&nbsp; 180 DAY MONEY BACK GUARANTEE &nbsp;&nbsp;&nbsp;&nbsp;
+            TRENDING ON TIKTOK &nbsp;&nbsp;&nbsp;&nbsp; 180 DAY MONEY BACK GUARANTEE &nbsp;&nbsp;&nbsp;&nbsp;
+            TRENDING ON TIKTOK &nbsp;&nbsp;&nbsp;&nbsp; 180 DAY MONEY BACK GUARANTEE &nbsp;&nbsp;&nbsp;&nbsp;
+            TRENDING ON TIKTOK &nbsp;&nbsp;&nbsp;&nbsp; 180 DAY MONEY BACK GUARANTEE &nbsp;&nbsp;&nbsp;&nbsp;
+            TRENDING ON TIKTOK &nbsp;&nbsp;&nbsp;&nbsp; 180 DAY MONEY BACK GUARANTEE &nbsp;&nbsp;&nbsp;&nbsp;
+            TRENDING ON TIKTOK &nbsp;&nbsp;&nbsp;&nbsp; 180 DAY MONEY BACK GUARANTEE &nbsp;&nbsp;&nbsp;&nbsp;
+            TRENDING ON TIKTOK &nbsp;&nbsp;&nbsp;&nbsp; 180 DAY MONEY BACK GUARANTEE &nbsp;&nbsp;&nbsp;&nbsp;
+            TRENDING ON TIKTOK &nbsp;&nbsp;&nbsp;&nbsp; 180 DAY MONEY BACK GUARANTEE &nbsp;&nbsp;&nbsp;&nbsp;
+            TRENDING ON TIKTOK &nbsp;&nbsp;&nbsp;&nbsp; 180 DAY MONEY BACK GUARANTEE &nbsp;&nbsp;&nbsp;&nbsp;
+            TRENDING ON TIKTOK &nbsp;&nbsp;&nbsp;&nbsp; 180 DAY MONEY BACK GUARANTEE &nbsp;&nbsp;&nbsp;&nbsp;
+        </div>
+    </div>
+</div>
+
+<style>
+/* Ticker Wrapper */
+.ticker-wrapper {
+    width: 100%;
+    background-color: #000000; /* Black background */
+    overflow: hidden;
+    padding: 10px 0; /* Add vertical padding for breathing room */
+    margin: 0;
+    box-sizing: border-box; /* Ensure padding doesn’t affect layout */
+}
+
+/* Ticker */
+.ticker {
+    display: flex;
+    white-space: nowrap;
+    animation: ticker-animation 60s linear infinite; /* Faster scroll for long content */
+}
+
+/* Ticker Content */
+.ticker-content {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff; /* White text color */
+    padding-right: 150px; /* Space between repeated text segments */
+}
+
+/* Ticker Animation */
+@keyframes ticker-animation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+</style>

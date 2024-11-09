@@ -1,0 +1,115 @@
+<div class="trustpilot-section">
+    <div class="trustpilot-heading">
+        <h2>OUR CUSTOMERS SAY IT BETTER</h2>
+        <p>Excellent <strong>4.5 / 5</strong> 
+            <span class="stars">★★★★★</span>
+            <br>
+            <small>Based on 2,621+ Reviews</small>
+        </p>
+    </div>
+    <div class="trustpilot-cards">
+        <div class="trustpilot-card">
+            <div class="star-rating">★★★★★</div>
+            <h3>Shiny and New!</h3>
+            <p>I am an Esthetician and I love using this on my clients. I love high frequency for so many reasons and this handheld wand makes moving around the spa room so effortless.</p>
+            <p class="author"><strong>Jenna - 30 September</strong></p>
+        </div>
+        <div class="trustpilot-card">
+            <div class="star-rating">★★★★★</div>
+            <h3>People Are Saying That I'm Glowing</h3>
+            <p>I got this product because a nurse at the hospital I was receiving treatment from had glowing skin and she told me about this device. I must say, my skin does appear softer with more clarity and a rosy glow.</p>
+            <p class="author"><strong>Martha - 29 August</strong></p>
+        </div>
+        <div class="trustpilot-card">
+            <div class="star-rating">★★★★★</div>
+            <h3>Works Great for Acne</h3>
+            <p>Amazing for acne! I have been using this product for about a month now and am very pleased with the results. This device, combined with my acne regimen, has helped me get my acne under control.</p>
+            <p class="author"><strong>Gina - 15 August</strong></p>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Trustpilot Section Styling */
+.trustpilot-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f7f5; /* Light background color */
+}
+
+/* Heading Styling */
+.trustpilot-heading h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.trustpilot-heading p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.trustpilot-heading .stars {
+    color: #6dc66d; /* Green color for stars */
+    font-size: 20px;
+}
+
+.trustpilot-heading small {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Review Cards Container */
+.trustpilot-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Review Card Styling */
+.trustpilot-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+.trustpilot-card .star-rating {
+    color: #6dc66d; /* Green color for stars */
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.trustpilot-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.trustpilot-card p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin: 0 0 10px;
+}
+
+.trustpilot-card .author {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .trustpilot-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+</style>

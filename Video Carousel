@@ -1,0 +1,151 @@
+<div class="video-carousel-wrapper">     
+    <!-- Headline -->     
+    <h2 class="carousel-headline">Real People, Real Results</h2>     
+    <div class="video-carousel">         
+        <div class="video-slide">             
+            <video controls loop muted playsinline>                 
+                <source src="https://cdn.shopify.com/videos/c/o/v/cfd1ad48f5ff46ae8b8c3677b76a38ea.mp4" type="video/mp4">                 
+                Your browser does not support the video tag.             
+            </video>         
+        </div>         
+        <div class="video-slide">             
+            <video controls loop muted playsinline>                 
+                <source src="https://cdn.shopify.com/videos/c/o/v/81341dfafd7141a294c1797e8e939a36.mp4" type="video/mp4">                 
+                Your browser does not support the video tag.             
+            </video>         
+        </div>         
+        <div class="video-slide">             
+            <video controls loop muted playsinline>                 
+                <source src="https://cdn.shopify.com/videos/c/o/v/1200d0e1762c490ab54168936de9ae89.mp4" type="video/mp4">                 
+                Your browser does not support the video tag.             
+            </video>         
+        </div>         
+        <div class="video-slide">             
+            <video controls loop muted playsinline>                 
+                <source src="https://cdn.shopify.com/videos/c/o/v/19c2419d60c4417f837db39fb9bfed10.mp4" type="video/mp4">                 
+                Your browser does not support the video tag.             
+            </video>         
+        </div>     
+    </div>     
+    <!-- Dot indicators -->     
+    <div class="carousel-dots"></div> 
+</div>  
+
+<style> 
+/* Carousel Wrapper */ 
+.video-carousel-wrapper {     
+    overflow: hidden;     
+    max-width: 100%;     
+    margin: auto;     
+    padding: 20px 0;     
+    text-align: center; 
+}  
+
+/* Headline */ 
+.carousel-headline {     
+    font-size: 24px;     
+    font-weight: bold;     
+    margin-bottom: 20px;     
+    color: #333; 
+}  
+
+/* Carousel Container using CSS Grid */ 
+.video-carousel {     
+    display: grid;     
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));     
+    max-width: 1200px; /* Limits width on wider screens to keep items together */     
+    gap: 16px;     
+    padding-bottom: 10px;     
+    margin: auto; /* Center the grid container */ 
+}  
+
+/* Video Slide */ 
+.video-slide video {     
+    width: 100%;     
+    height: auto;     
+    border-radius: 8px; 
+}  
+
+/* Mobile View: Display One Video at a Time for sliding */ 
+@media (max-width: 768px) {     
+    .video-carousel {         
+        display: flex;         
+        overflow-x: auto;         
+        scroll-snap-type: x mandatory;         
+        gap: 16px;     
+    }     
+    .video-slide {         
+        flex: 0 0 auto;         
+        width: 250px; /* Width of each slide on mobile */         
+        scroll-snap-align: start;     
+    }     
+    .video-carousel::-webkit-scrollbar {         
+        display: none; /* Hide scrollbar for a cleaner look */     
+    } 
+}  
+
+/* Dot Slider */ 
+.carousel-dots {     
+    text-align: center;     
+    margin-top: 10px; 
+}  
+
+.carousel-dots .dot {     
+    display: inline-block;     
+    width: 12px;     
+    height: 12px;     
+    margin: 0 6px;     
+    background-color: #ccc;     
+    border-radius: 50%;     
+    cursor: pointer;     
+    transition: background-color 0.3s ease; 
+}  
+
+.carousel-dots .dot.active {     
+    background-color: #333; 
+} 
+</style>  
+
+<script> 
+document.addEventListener("DOMContentLoaded", function() {     
+    const carousel = document.querySelector('.video-carousel');     
+    const dotsContainer = document.querySelector('.carousel-dots');     
+    const slides = document.querySelectorAll('.video-slide');     
+    const slideCount = slides.length;      
+
+    // Create dots based on the number of slides     
+    slides.forEach((slide, index) => {         
+        const dot = document.createElement('span');         
+        dot.classList.add('dot');         
+        if (index === 0) dot.classList.add('active');         
+        dotsContainer.appendChild(dot);     
+    });      
+
+    const dots = document.querySelectorAll('.carousel-dots .dot');      
+
+    // Function to update active dot     
+    function updateActiveDot() {         
+        const scrollLeft = carousel.scrollLeft;         
+        const slideWidth = carousel.offsetWidth;         
+        const activeIndex = Math.round(scrollLeft / slideWidth);          
+
+        dots.forEach(dot => dot.classList.remove('active'));         
+        if (dots[activeIndex]) {             
+            dots[activeIndex].classList.add('active');         
+        }     
+    }      
+
+    // Scroll event listener     
+    carousel.addEventListener('scroll', updateActiveDot);      
+
+    // Dot click event listener     
+    dots.forEach((dot, index) => {         
+        dot.addEventListener('click', () => {             
+            carousel.scrollTo({                 
+                left: index * carousel.offsetWidth,                 
+                behavior: 'smooth'             
+            });         
+        });     
+    }); 
+}); 
+</script>

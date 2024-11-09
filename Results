@@ -1,0 +1,91 @@
+<div class="full-width-results-section">
+    <div class="results-section">
+        <div class="results-text">
+            <h2>BETTER SKIN IN 2 WEEKS OR YOUR MONEY BACK</h2>
+            <p>Use the Nakd wand with confidence, knowing that our results are backed by science.</p>
+        </div>
+        <div class="results-stats">
+            <div class="stat-item">
+                <span class="stat-percent">88%</span>
+                <p>noticed a significant reduction in acne and clearer skin within the first month.</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-percent">94%</span>
+                <p>reported less redness and inflammation after using the device regularly for just two weeks.</p>
+            </div>
+            <div class="stat-item">
+                <span class="stat-percent">84%</span>
+                <p>experienced faster healing of breakouts, with blemishes disappearing within 48 hours of use.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+/* Full-Width Container */
+.full-width-results-section {
+    width: 100%;
+    background-color: #000; /* Full-width background color */
+    padding: 40px 0;
+}
+
+/* Inner Content Container */
+.results-section {
+    max-width: 1200px; /* Centered content max-width */
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0 5%;
+    gap: 2%;
+}
+
+.results-text {
+    flex: 1;
+    max-width: 40%; /* Reduced max-width for better alignment */
+}
+
+.results-text h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.results-text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.results-stats {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%; /* Reduced to balance with text */
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+}
+
+.stat-percent {
+    font-size: 32px;
+    font-weight: bold;
+    color: #6d97a3;
+    margin-right: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .results-section {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .results-text, .results-stats {
+        max-width: 100%;
+    }
+}
+</style>

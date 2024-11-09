@@ -1,0 +1,16 @@
+<div class="secure-checkout-image">
+    <img src="https://cdn.shopify.com/s/files/1/0652/6671/2739/files/file-9NmBNnfrd6.png?v=1731177474" alt="Guaranteed safe & secure checkout with various payment options">
+</div>
+
+<style>
+.secure-checkout-image {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.secure-checkout-image img {
+    max-width: 100%;
+    height: auto;
+}
+</style>

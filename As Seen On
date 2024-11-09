@@ -1,0 +1,62 @@
+<div class="as-seen-in-section">     
+    <h2 class="as-seen-in-title">AS SEEN ON</h2>     
+    <div class="logo-grid">         
+        <!-- Allure Logo -->         
+        <div class="logo-item">             
+            <img src="https://cdn.shopify.com/s/files/1/0652/6671/2739/files/2_6d308b3c-b7f6-472d-b5ee-3de87784024d_1.webp?v=1730407347" alt="Allure">         
+        </div>         
+        <!-- Glamour Logo -->         
+        <div class="logo-item">             
+            <img src="https://cdn.shopify.com/s/files/1/0652/6671/2739/files/6_c2e1c632-a970-45bd-9791-7176287f7662.webp?v=1730407329" alt="Glamour">         
+        </div>         
+        <!-- Women's Health Logo -->         
+        <div class="logo-item">             
+            <img src="https://cdn.shopify.com/s/files/1/0652/6671/2739/files/9_a9b3ed59-352b-463d-9f98-9af72908eee2.webp?v=1730407338" alt="Women's Health">         
+        </div>         
+        <!-- The Strategist Logo -->         
+        <div class="logo-item">             
+            <img src="https://cdn.shopify.com/s/files/1/0652/6671/2739/files/1_3f68eab7-7ba0-4f57-9bcf-c7b3483d0a9c_1.webp?v=1730407347" alt="The Strategist">         
+        </div>     
+    </div> 
+</div>  
+
+<style> 
+/* Section Styles */ 
+.as-seen-in-section {     
+    background-color: #F7F7F7; /* Very light gray background */     
+    padding: 20px;     
+    margin: 0; /* Remove white space around the section */
+    text-align: center; 
+}  
+
+.as-seen-in-title {     
+    font-size: 24px;     
+    font-weight: bold;     
+    margin-bottom: 20px;     
+    color: #333; 
+}  
+
+/* Logo Grid */ 
+.logo-grid {     
+    display: flex;     
+    justify-content: center;     
+    align-items: center;     
+    gap: 40px;     
+    flex-wrap: wrap; 
+}  
+
+/* Logo Item */ 
+.logo-item img {     
+    max-height: 40px; /* Adjust logo height */     
+    object-fit: contain; 
+}  
+
+/* Mobile View: Two columns */ 
+@media (max-width: 768px) {     
+    .logo-grid {         
+        grid-template-columns: repeat(2, 1fr);         
+        gap: 20px;         
+        display: grid;     
+    } 
+} 
+</style>
